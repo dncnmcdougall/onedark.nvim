@@ -3,7 +3,7 @@ local util = require("onedark.util")
 return {
 	penumbra = {
 		black = "#000000",
-		bg0 = "#000000",
+		bg0 = "#111111",
 		bg1 = "#0D0F13",
 		bg2 = "#181B1F",
 		bg3 = "#3E4044",

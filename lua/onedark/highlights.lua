@@ -175,7 +175,7 @@ hl.treesitter = {
     ["@text.reference"] = colors.Blue,
     ["@text.strike"] = {fg = c.fg, fmt = 'strikethrough'},
     ["@text.strong"] = {fg = c.fg, fmt = 'bold'},
-    ["@text.title"] = {fg = c.grey, fmt = 'bold'},
+    ["@text.title"] = {fg = c.light_yellow, fmt = 'bold'},
     ["@text.underline"] = {fg = c.fg, fmt = 'underline'},
     ["@text.uri"] = {fg = c.cyan, fmt = 'underline'},
     ["@title"] = colors.Cyan,
@@ -211,16 +211,10 @@ hl.plugins.lsp = {
     LspCxxHlSkippedRegion = colors.Grey,
     LspCxxHlSkippedRegionBeginEnd = colors.Red,
 
-    -- DiagnosticError = {fg = c.red},
-    -- DiagnosticHint = {fg = c.purple},
-    -- DiagnosticInfo = {fg = c.cyan},
-    -- DiagnosticWarn = {fg = c.yellow},
-
     DiagnosticError = {fg = c.red, bg=hl.common.SignColumn.bg},
     DiagnosticHint = {fg = c.purple, bg=hl.common.SignColumn.bg},
     DiagnosticInfo = {fg = c.cyan, bg=hl.common.SignColumn.bg},
     DiagnosticWarn = {fg = c.yellow, bg=hl.common.SignColumn.bg},
-
 
     DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg0) or c.none,
                                    fg = diagnostics_error_color },
